@@ -11,15 +11,14 @@
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true" />
-
+    <!---
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/PhotoRecycler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:overScrollMode="never" />
-
+    -->
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_marginTop="250dp"
         android:id="@+id/recyclerView"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content" />

@@ -25,15 +25,17 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        LinearLayoutManager horizonalLayoutManager = new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false);
+        /*LinearLayoutManager horizonalLayoutManager = new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false);
 
         recyclerView.setLayoutManager(horizonalLayoutManager);
         recyclerView.setAdapter(adapter);
 
-        adapter.setItems(new ImageData().getItems());
+        adapter.setItems(new ImageData().getItems());*/
+
+
+        //course
 
         first_Course = new ArrayList<>();
-
         first_Course.add(new Course("부산 2박 3일 여행코스", "여행코스", "깔깔", R.drawable.first));
         first_Course.add(new Course("부산 여행 코스 추천 6곳", "여행코스", "즐거워", R.drawable.second));
         first_Course.add(new Course("부산 1박 2일 밤도깨비 여행 코스", "여행코스", "조사", R.drawable.third));
@@ -45,7 +47,7 @@ public class HomeFragment extends Fragment {
 
         RecyclerView.Adapter myAdapter = new RecyclerViewAdapter(getActivity(), first_Course);
 
-//        myrv.setLayoutManager(new GridLayoutManager(this, 3));
+        //myrv.setLayoutManager(new GridLayoutManager(this, 3));
 
         // 가로 레이아웃
         LinearLayoutManager horizontalLayoutManager = new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false);
