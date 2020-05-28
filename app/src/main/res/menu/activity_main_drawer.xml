@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+
+    </group>
+
+    <item android:title="@string/menu_calendar">
+        <menu>
+            <item
+                android:id="@+id/nav_calendar"
+                android:icon="@drawable/ic_calendar_black"
+                android:title="@string/menu_calendar" />
+        </menu>
+    </item>
+
+    <item android:title="지도">
+
+        <menu>
+            <item
+                android:id="@+id/nav_culture"
+                android:checkable="true"
+                android:icon="@drawable/ic_map"
+                android:title="문화 / 관광 한눈에 보기" />
+            <item
+                android:id="@+id/nav_eat"
+                android:checkable="true"
+                android:icon="@drawable/ic_map"
+                android:title="음식점 / 카페 한눈에 보기" />
+            <item
+                android:id="@+id/nav_publicTrans"
+                android:checkable="true"
+                android:icon="@drawable/ic_map"
+                android:title="대중교통 한눈에 보기" />
+            <item
+                android:id="@+id/nav_medical"
+                android:checkable="true"
+                android:icon="@drawable/ic_map"
+                android:title="의료시설 한눈에 보기" />
+        </menu>
+
+    </item>
+
+    <item android:title="편의시설">
+
+        <menu>
+            <item
+                android:id="@+id/nav_find_hospital"
+                android:checkable="true"
+                android:icon="@drawable/ic_find_hospital"
+                android:title="병원 검색하기" />
+
+            <item
+                android:id="@+id/nav_parking"
+                android:checkable="true"
+                android:icon="@drawable/ic_local_parking_black_24dp"
+                android:title="공영 주차장" />
+
+            <item
+                android:id="@+id/nav_bus"
+                android:checkable="true"
+                android:icon="@drawable/ic_directions_bus_black_24dp"
+                android:title="버스" />
+
+            <item
+                android:id="@+id/nav_disabled_person"
+                android:checkable="true"
+                android:icon="@drawable/ic_disabled_person"
+                android:title="장애인 편의시설 보유 업소" />
+        </menu>
+
+    </item>
+
+    <item android:title="음식점">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_find_food"
+                android:checkable="true"
+                android:icon="@drawable/ic_find_food"
+                android:title="모범음식점 검색하기" />
+
+        </menu>
+
+    </item>
+
+
+
+</menu>

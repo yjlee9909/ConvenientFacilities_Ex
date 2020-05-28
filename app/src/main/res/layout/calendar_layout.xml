@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_selectionColor="@color/colorSelectedDate" />
+
+    <TextView
+        android:id="@+id/selectDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSelectedDate"
+        android:gravity="center_horizontal"
+        android:text="YYYY / MM / DD"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMemo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:overScrollMode="never"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
