@@ -28,6 +28,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".home.Course_Activity_daytrip"></activity>
+        <activity android:name=".home.Course_Activity_two_three_trip"></activity>
         <activity android:name=".home.RecyclerViewAdapter"></activity>
         <activity android:name=".home.Course_Activity" />
         <activity

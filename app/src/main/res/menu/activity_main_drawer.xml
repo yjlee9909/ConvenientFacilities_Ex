@@ -54,6 +54,11 @@
                 android:id="@+id/nav_daytrip"
                 android:icon="@drawable/ic_edit_location"
                 android:title="당일여행" />
+
+            <item
+                android:id="@+id/nav_two_three"
+                android:icon="@drawable/ic_edit_location"
+                android:title="2박 3일여행" />
         </menu>
     </item>
 

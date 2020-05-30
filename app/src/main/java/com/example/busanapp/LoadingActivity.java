@@ -24,6 +24,7 @@ import com.example.busanapp.ui.home.CultureFragment;
 import com.example.busanapp.ui.home.MedicalFragment;
 import com.example.busanapp.ui.home.ParkingFragment;
 import com.example.busanapp.ui.home.PublicTransFragment;
+import com.example.busanapp.ui.home.TwoThreetripFragment;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.List;
@@ -127,6 +128,10 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
             case R.id.nav_daytrip:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new DaytripFragment()).commit();
+                break;
+            case R.id.nav_two_three:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new TwoThreetripFragment()).commit();
                 break;
             default:
                 break;
