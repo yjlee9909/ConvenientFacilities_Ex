@@ -31,9 +31,6 @@ public class FoodFragment extends Fragment {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
 
-
-
-
     }
 
 
